@@ -1,5 +1,6 @@
 main {
   margin-top: 60px;
+
 }
 
 main h1 {
@@ -26,4 +27,36 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+}
+.group img {
+  width: 100%;
+}
+/* Mobile first */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+}
+.item {
+  flex: 1;
+  margin: 10px;
+}
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+.group-bg {
+  background-color: #5c4f41;
+  padding: 0px 20px;
+}
+
+/* Desktop and tablet */
+@media all and (min-width: 800px) {
+  section{
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
 }
